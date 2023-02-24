@@ -9,7 +9,7 @@ import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol";
 contract CODE is ERC20, ERC20Permit, AccessControl, ERC20Burnable {
     bytes32 public constant MINTER_ROLE = keccak256("MINTER_ROLE");
 
-    constructor() ERC20("Developer DAO", "CODE") ERC20Permit("Developer DAO") {
+    constructor() ERC20("Ai3.co", "AI3CO") ERC20Permit("Ai3.co") {
         _setupRole(DEFAULT_ADMIN_ROLE, _msgSender());
         _mint(_msgSender(), 10_000_000 * 1e18);
     }
